@@ -50,8 +50,7 @@ class OrderItemResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('item_id')
-                    ->numeric()
+                Tables\Columns\TextColumn::make('item.name')
                     ->sortable(),
                 Tables\Columns\TextColumn::make('unit_price')
                     ->numeric()
